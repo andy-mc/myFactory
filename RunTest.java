@@ -3,8 +3,8 @@ public class RunTest {
     System.out.println("\n\n ********** PizzaStore **********");
     System.out.println("\n");
     
-    PizzaStore ny_pizza_store = new NyPizzaStore();
-    PizzaStore ch_pizza_store = new ChPizzaStore();
+    PizzaStore ny_pizza_store = new PizzaStore(new NySimplePizzaFactory());
+    PizzaStore ch_pizza_store = new PizzaStore(new ChSimplePizzaFactory());
     
     ny_pizza_store.orderPizza("cheese");
     System.out.println("\n");
@@ -13,7 +13,5 @@ public class RunTest {
     ch_pizza_store.orderPizza("cheese");
     System.out.println("\n");
     
-    
-    // pizza_store.orderPizza("pepperoni");
   }
 }
