@@ -11,7 +11,8 @@ public class RunTest {
     ny_pizza_store.orderPizza("pepperoni");
     System.out.println("\n");
     ch_pizza_store.orderPizza("cheese");
+    ch_pizza_store.orderPizza("pepperoni");
     System.out.println("\n");
-    
+
   }
 }
