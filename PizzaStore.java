@@ -1,19 +1,19 @@
 public class PizzaStore {
+    String city;
+    Pizza pizza;
+    SimplePizzaFactory city_factory;
 
-   public void orderPizza(String type) {
-      Pizza pizza;
+    PizzaStore(String city) {
+      city_factory = new SimplePizzaFactory(city);
+    }
 
-      if (type.equals("cheese")) {
-        pizza = new CheesePizza();
-      } else if (type.equals("pepperoni")) {
-        pizza = new PepperoniPizza();
-      } else {
-        pizza = null;
-      }
+    
+    public void orderPizza(String type) { 
+      pizza = city_factory.createPizza(type);
 
       pizza.prepare();
       pizza.bake();
       pizza.cut();
       pizza.box();
-   }
+    }
 }
