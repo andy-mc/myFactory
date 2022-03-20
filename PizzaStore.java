@@ -1,3 +1,3 @@
 public abstract class PizzaStore {
-  public abstract void orderPizza(String type);
+  public abstract Pizza orderPizza(String type);
 }

@@ -1,19 +1,20 @@
 public class NyPizzaStore extends PizzaStore {
-    String city;
+  SimplePizzaFactory factory;
+
+  public NyPizzaStore() {
+    this.factory = new SimplePizzaFactory("NY");
+  }
+
+  public Pizza orderPizza(String type) { 
     Pizza pizza;
-    SimplePizzaFactory city_factory;
-
-    NyPizzaStore() {
-      city_factory = new SimplePizzaFactory("NY");
-    }
-
     
-    public void orderPizza(String type) { 
-      pizza = city_factory.createPizza(type);
+    pizza = factory.createPizza(type);
 
-      pizza.prepare();
-      pizza.bake();
-      pizza.cut();
-      pizza.box();
-    }
+    pizza.prepare();
+    pizza.bake();
+    pizza.cut();
+    pizza.box();
+
+    return pizza;
+  }
 }
