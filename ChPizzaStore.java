@@ -1,13 +1,13 @@
-public class NySimplePizzaFactory extends SimplePizzaFactory {
+public class ChPizzaStore extends PizzaStore {  
   public Pizza createPizza(String type) { 
     Pizza pizza = null;
 
     if (type.equals("cheese")) {
-      pizza = new NyCheesePizza();
+      pizza = new ChCheesePizza();
     } else if (type.equals("pepperoni")) {
-      pizza = new NyPepperoniPizza();
+      pizza = new ChPepperoniPizza();
     } 
-      
+
     return pizza;
   }
 }

@@ -1,14 +1,10 @@
+// tengo este molde para crear una pizza
+// cada pizza que use este molde va a tener que llenar los metodos de esta pizza
+// si un metodo no se implementa salta un error
+// cada pizza que use este molde definira su preparacion, ordeano, corte, y caja
 public abstract class Pizza {
-   public void prepare() {
-      System.out.println("Default preparing pizza");
-   }
-   public void bake() {
-      System.out.println("Default baking pizza");
-   }
-   public void cut() {
-      System.out.println("Default cutting pizza");
-   }
-   public void box() {
-      System.out.println("Default boxing pizza");
-   }
+   public abstract void prepare();
+   public abstract void bake();
+   public abstract void cut();
+   public abstract void box();
 }

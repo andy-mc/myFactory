@@ -3,16 +3,16 @@ public class RunTest {
     System.out.println("\n\n ********** PizzaStore **********");
     System.out.println("\n");
     
-    PizzaStore ny_pizza_store = new PizzaStore(new NySimplePizzaFactory());
-    PizzaStore ch_pizza_store = new PizzaStore(new ChSimplePizzaFactory());
+    PizzaStore ny_pizza_store = new NyPizzaStore();
+    PizzaStore ch_pizza_store = new ChPizzaStore();
     
     ny_pizza_store.orderPizza("cheese");
     System.out.println("\n");
     ny_pizza_store.orderPizza("pepperoni");
     System.out.println("\n");
     ch_pizza_store.orderPizza("cheese");
+    System.out.println("\n");
     ch_pizza_store.orderPizza("pepperoni");
     System.out.println("\n");
-
   }
 }
