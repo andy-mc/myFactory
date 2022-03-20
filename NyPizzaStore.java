@@ -8,6 +8,8 @@ public class NyPizzaStore extends PizzaStore {
       pizza = new NyCheesePizza();
     } else if (type.equals("pepperoni")) {
       pizza = new NyPepperoniPizza();
+    } else if (type.equals("margarita")) {
+      pizza = new NyMargaritaPizza();
     } 
 
     return pizza;

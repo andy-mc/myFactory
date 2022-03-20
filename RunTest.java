@@ -10,6 +10,8 @@ public class RunTest {
     System.out.println("\n");
     ny_pizza_store.orderPizza("pepperoni");
     System.out.println("\n");
+    ny_pizza_store.orderPizza("margarita");
+    System.out.println("\n");
     ch_pizza_store.orderPizza("cheese");
     System.out.println("\n");
     ch_pizza_store.orderPizza("pepperoni");
